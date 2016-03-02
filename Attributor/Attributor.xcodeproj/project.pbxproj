@@ -81,8 +81,6 @@
 		ECF6FC411C86F43F00D92A14 /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
-				ECF6FC461C86F43F00D92A14 /* AttributorAppDelegate.h */,
-				ECF6FC471C86F43F00D92A14 /* AttributorAppDelegate.m */,
 				ECF6FC491C86F43F00D92A14 /* AttributorViewController.h */,
 				ECF6FC4A1C86F43F00D92A14 /* AttributorViewController.m */,
 				ECF6FC4C1C86F44000D92A14 /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		ECF6FC421C86F43F00D92A14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECF6FC461C86F43F00D92A14 /* AttributorAppDelegate.h */,
+				ECF6FC471C86F43F00D92A14 /* AttributorAppDelegate.m */,
 				ECF6FC431C86F43F00D92A14 /* Info.plist */,
 				ECF6FC441C86F43F00D92A14 /* main.m */,
 			);
