@@ -6,13 +6,13 @@
 //  Copyright (c) 2016 noorg. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AttributorViewController.h"
 
-@interface ViewController ()
+@interface AttributorViewController ()
 
 @end
 
-@implementation ViewController
+@implementation AttributorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

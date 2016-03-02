@@ -6,13 +6,13 @@
 //  Copyright (c) 2016 noorg. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "AttributorAppDelegate.h"
 
-@interface AppDelegate ()
+@interface AttributorAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AttributorAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
