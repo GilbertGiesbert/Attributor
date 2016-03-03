@@ -15,11 +15,152 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6Z-tW-mvS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.71818554401397705" green="0.8919798731803894" blue="0.99940502643585205" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="97" width="368" height="319"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9id-v6-7q6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Outline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="550" width="49" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="outlineBodySelection" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yux-eI-Nak"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fu-Uw-ke6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unoutline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="318" y="550" width="66" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unoutlineBodySelection" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7z1-NT-cBm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piQ-LI-P2r">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.98907274007797241" green="0.41601505875587463" blue="0.44588685035705566" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="478" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r9X-jO-aKs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ6-aQ-FYS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.46349981427192688" green="1" blue="0.423299640417099" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="96" y="478" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wVl-ZV-iez"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-tw-EOJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9932287335395813" green="0.6743464469909668" blue="0.42550522089004517" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="168" y="478" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nhm-0J-nOr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14j-sN-b65">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.84495097398757935" green="0.38758021593093872" blue="0.99908459186553955" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="478" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yRP-pW-B0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-wl-dkW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.43324574828147888" green="0.76290833950042725" blue="0.99777048826217651" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="312" y="478" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uA3-rl-fQO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app rocks!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-Yf-xCA">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="20" width="123" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="I6Z-tW-mvS"/>
+                                <exclude reference="9id-v6-7q6"/>
+                                <exclude reference="3Fu-Uw-ke6"/>
+                                <exclude reference="piQ-LI-P2r"/>
+                                <exclude reference="PZ6-aQ-FYS"/>
+                                <exclude reference="B2t-tw-EOJ"/>
+                                <exclude reference="14j-sN-b65"/>
+                                <exclude reference="BqB-wl-dkW"/>
+                                <exclude reference="w2I-Yf-xCA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="I6Z-tW-mvS"/>
+                                <include reference="9id-v6-7q6"/>
+                                <include reference="3Fu-Uw-ke6"/>
+                                <include reference="piQ-LI-P2r"/>
+                                <include reference="PZ6-aQ-FYS"/>
+                                <include reference="B2t-tw-EOJ"/>
+                                <include reference="14j-sN-b65"/>
+                                <include reference="BqB-wl-dkW"/>
+                                <include reference="w2I-Yf-xCA"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="body" destination="I6Z-tW-mvS" id="Qnp-j6-IGD"/>
+                        <outlet property="headline" destination="w2I-Yf-xCA" id="gAU-fc-35d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="249" y="493"/>
         </scene>
     </scenes>
 </document>
