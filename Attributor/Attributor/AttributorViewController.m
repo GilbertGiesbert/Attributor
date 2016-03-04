@@ -19,6 +19,9 @@
 @implementation AttributorViewController
 
 
+#pragma mark - callback methods
+
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     
@@ -61,7 +64,26 @@
     
 }
 
+#pragma mark - outlet methods
 
+
+- (IBAction)changeBodySelectionColorToMatchBackgroundColorOfButton:(UIButton *)sender {
+    
+    [self.body.textStorage addAttribute:NSForegroundColorAttributeName value:sender.backgroundColor range:self.body.selectedRange];
+}
+
+- (IBAction)outlineBodySelection {
+    [self outlineString:self.body.textStorage forRange:self.body.selectedRange];
+}
+
+
+- (IBAction)unoutlineBodySelection {
+    
+    [self.body.textStorage removeAttribute:NSStrokeWidthAttributeName range:self.body.selectedRange];
+}
+
+
+#pragma mark - cutom methods
 
 
 -(void)preferredFontsChanged:(NSNotification *)notification{
@@ -81,19 +103,10 @@
 }
 
 
-- (IBAction)changeBodySelectionColorToMatchBackgroundColorOfButton:(UIButton *)sender {
-    
-    [self.body.textStorage addAttribute:NSForegroundColorAttributeName value:sender.backgroundColor range:self.body.selectedRange];
-}
-
-- (IBAction)outlineBodySelection {
-    [self outlineString:self.body.textStorage forRange:self.body.selectedRange];
-}
 
 
-- (IBAction)unoutlineBodySelection {
-    
-    [self.body.textStorage removeAttribute:NSStrokeWidthAttributeName range:self.body.selectedRange];
-}
+
+#pragma mark - getters and setters
+
 
 @end
